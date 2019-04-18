@@ -1,7 +1,7 @@
 # TransE-Pytorch
 An implementation of TransE[1] in Pytorch.
 
-Test results with default parameter:
+Test results with default parameters:
 
         -----Result of Link Prediction (Raw)-----
       |  Mean Rank  |  Filter@10  |
