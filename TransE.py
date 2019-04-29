@@ -20,11 +20,11 @@ class TransE(nn.Module):
         sqrtE = entityDimension**0.5
 
         self.relation_embeddings = nn.Embedding(self.numOfRelation, self.relationDimension)
-        self.relation_embeddings.weight.data = torch.FloatTensor(self.numOfRelation, self.relationDimension).uniform_(-6/sqrtR, 6/sqrtR)
+        self.relation_embeddings.weight.data = torch.FloatTensor(self.numOfRelation, self.relationDimension).uniform_(-6./sqrtR, 6./sqrtR)
         self.relation_embeddings.weight.data = F.normalize(self.relation_embeddings.weight.data, 2, 1)
 
         self.entity_embeddings = nn.Embedding(self.numOfEntity, self.entityDimension)
-        self.entity_embeddings.weight.data = torch.FloatTensor(self.numOfEntity, self.entityDimension).uniform_(-6/sqrtE, 6/sqrtE)
+        self.entity_embeddings.weight.data = torch.FloatTensor(self.numOfEntity, self.entityDimension).uniform_(-6./sqrtE, 6./sqrtE)
         self.entity_embeddings.weight.data = F.normalize(self.entity_embeddings.weight.data, 2, 1)
 
     def forward(self, positiveBatchHead, positiveBatchRelation, positiveBatchTail, corruptedBatchHead, corruptedBatchRelation, corruptedBatchTail):
