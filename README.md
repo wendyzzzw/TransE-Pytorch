@@ -12,7 +12,6 @@ Test results on FB15K with default parameters:
 
 Better performance can be achieved by tunning the parameters.
 
-***
 * Bordes A, Usunier N, Garcia-Duran A, et al. Translating embeddings for modeling multi-relational data[C]//Advances in neural information processing systems. 2013: 2787-2795.
 
 
@@ -56,8 +55,8 @@ self.earlyStopPatience = 5  # stop the training and output the learning results 
 
 Data
 -
-***
-Training Data.
+
+`Training Data`
 
 train2id.txt: the first line is the number of triples; in the following, each line is in the format of "head_id tail_id relation_id".
 
@@ -69,13 +68,11 @@ valid2id.txt: the first line is the number of validation triples; in the followi
 
 Note: head_id and relation_id are consistent with entity_id and relation_id. For example, if there is a triple "head tail relation" for training, and we can find "head \t 0" and "tail \t 1" in entity2id.txt, and "relation \t 0" in relation2id.txt. Then, train2id.txt should containsa line "0 1 0".
 
-***
-Test Data.
+`Test Data`
 
 test2id.txt: the first line is the number of test triples; in the following, each line is in the format of "head_id tail_id relation_id".
 
-***
-Output Data.
+`Output Data`
 
 entity2vec.pickle: the pickle file which stores the embedding vectors of entities (refer to transE.entity_embeddings.weight.data in TransE.py).
 
