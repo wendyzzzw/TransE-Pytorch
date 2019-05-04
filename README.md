@@ -16,6 +16,7 @@ Better performance can be achieved by tunning the parameters.
 
 
 Parameters
+-
 
 Please configure parameters in Train.py:
 
@@ -53,6 +54,7 @@ self.earlyStopPatience = 5  # stop the training and output the learning results 
 
 
 Data
+-
 
 Training Data.
 
