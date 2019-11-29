@@ -20,7 +20,7 @@ class trainTransE:
         self.entityDimension = 100
         self.relationDimension = 100
         self.numOfEpochs = 1000
-        self.outputFreq = 50
+        self.outputFreq = 2
         self.numOfBatches = 100
         self.learningRate = 0.01  # 0.01
         self.weight_decay = 0.001  # 0.005  0.02
