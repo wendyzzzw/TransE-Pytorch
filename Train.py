@@ -120,7 +120,7 @@ class trainTransE:
         optimizer = optim.SGD(transE.parameters(), lr=self.learningRate, weight_decay=self.weight_decay)
 
         dataSet = dataset(self.numOfTriple)
-        batchSize = long(self.numOfTriple / self.numOfBatches)
+        batchSize = int(self.numOfTriple / self.numOfBatches)
         dataLoader = DataLoader(dataSet, batchSize, True)
 
         patienceCount = 0
