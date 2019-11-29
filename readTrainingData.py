@@ -152,5 +152,5 @@ class readData:
         if count == self.numOfRelation:
             return
         else:
-            print "error in relation2id.txt"
+            print ("error in relation2id.txt")
             return
