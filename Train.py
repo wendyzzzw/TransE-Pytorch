@@ -232,8 +232,8 @@ class trainTransE:
         print ("-----Writing Training Results to " + self.outAdd + "-----")
         entity2vecAdd = self.outAdd + "/entity2vec.pickle"
         relation2vecAdd = self.outAdd + "/relation2vec.pickle"
-        entityOutput = open(entity2vecAdd, "w")
-        relationOutput = open(relation2vecAdd, "w")
+        entityOutput = open(entity2vecAdd, "wb")
+        relationOutput = open(relation2vecAdd, "wb")
         pickle.dump(self.entityEmbedding, entityOutput)
         pickle.dump(self.relationEmbedding, relationOutput)
         entityOutput.close()
