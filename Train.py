@@ -247,8 +247,8 @@ class trainTransE:
         tmpRelationEmbedding = pickle.load(relationInput)
         entityInput.close()
         relationInput.close()
-        transE.entity_embeddings.weight.data = tmpEntityEmbedding.double()
-        transE.relation_embeddings.weight.data = tmpRelationEmbedding.double()
+        transE.entity_embeddings.weight.data = tmpEntityEmbedding.float()
+        transE.relation_embeddings.weight.data = tmpRelationEmbedding.float()
 
     def readTestTriples(self):
         fileName = "/test2id.txt"
