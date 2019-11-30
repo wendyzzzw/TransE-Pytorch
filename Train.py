@@ -27,8 +27,8 @@ class trainTransE:
         self.margin = 1.0
         self.norm = 2
         self.top = 10
-        self.patience = 10
-        self.earlyStopPatience = 5
+        self.patience = 100
+        self.earlyStopPatience = 100
         self.bestAvFiMR = None
 
         self.train2id = {}
@@ -150,6 +150,9 @@ class trainTransE:
                 epochLoss += batchLoss
 
             print ("epoch " + str(epoch) + ": , loss: " + str(epochLoss))
+
+            with open("loss.txt", "a+") as f:
+                f.write(str(epoch) + ":" + str(epochLoss) + "\n")
 
             tmpAvFiMR = self.validate(transE)
 
