@@ -16,7 +16,7 @@ class trainTransE:
         self.inAdd = "/home/wzhou14fall/CS224W_proj/data/transe"
         self.outAdd = "./data/outputData"
         self.preAdd = "/home/wzhou14fall/CS224W_proj/data/transe"
-        self.preOrNot = True
+        self.preOrNot = False
         self.entityDimension = 50
         self.relationDimension = 50
         self.numOfEpochs = 1000
