@@ -13,14 +13,14 @@ from generatePosAndCorBatch import generateBatches, dataset
 class trainTransE:
 
     def __init__(self):
-        self.inAdd = "./data/FB15K"
+        self.inAdd = "/home/wzhou14fall/CS224W_proj/data/transe"
         self.outAdd = "./data/outputData"
-        self.preAdd = "./data/outputData"
-        self.preOrNot = False
-        self.entityDimension = 100
-        self.relationDimension = 100
+        self.preAdd = "/home/wzhou14fall/CS224W_proj/data/transe"
+        self.preOrNot = True
+        self.entityDimension = 50
+        self.relationDimension = 50
         self.numOfEpochs = 1000
-        self.outputFreq = 2
+        self.outputFreq = 50
         self.numOfBatches = 100
         self.learningRate = 0.01  # 0.01
         self.weight_decay = 0.001  # 0.005  0.02
