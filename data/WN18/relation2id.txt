@@ -1,3 +1,4 @@
+18
 _member_of_domain_topic	0
 _member_meronym	1
 _derivationally_related_form	2
