@@ -10,5 +10,5 @@ tmpRelationEmbedding = pickle.load(relationInput)
 entityInput.close()
 relationInput.close()
 
-np.savetxt('entity_emb_50.txt', tmpEntityEmbedding.numpy())
-np.savetxt('relation_emb_50.txt', tmpRelationEmbedding.numpy())
+np.savetxt('entity_emb_50.txt', tmpEntityEmbedding.cpu().numpy())
+np.savetxt('relation_emb_50.txt', tmpRelationEmbedding.cpu().numpy())
