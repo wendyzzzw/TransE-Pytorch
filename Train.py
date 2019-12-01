@@ -13,10 +13,10 @@ from generatePosAndCorBatch import generateBatches, dataset
 class trainTransE:
 
     def __init__(self):
-        self.inAdd = "/home/wzhou14fall/CS224W_proj/data/transe"
+        self.inAdd = "./data/WN18"
         self.outAdd = "./data/outputData"
-        self.preAdd = "/home/wzhou14fall/CS224W_proj/data/transe"
-        self.preOrNot = True
+        self.preAdd = "./data/WN18"
+        self.preOrNot = False
         self.entityDimension = 50
         self.relationDimension = 50
         self.numOfEpochs = 1000
